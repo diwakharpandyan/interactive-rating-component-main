@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+}
+.rating-state {
+  background-image: linear-gradient(
+    to bottom,
+    #21252b,
+    #1e2227,
+    #1b1f24,
+    #191c20,
+    #16191d
+  );
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  width: 325px;
+}
+
+.star-icon-container,
+.rating {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(213, 19%, 24%);
+  color: hsl(217, 12%, 63%);
+  font-weight: 500;
+  border: none;
+}
+main h1 {
+  opacity: 0.9;
+  font-size: 1.5rem;
+}
+main p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submit-button {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border: none;
+}
+.submit-button:hover,
+.submit-button-active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(216, 12%, 8%);
+}
+
+.rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+}
+.rating-active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(216, 12%, 8%);
+}
+.thank-you-state {
+  display: none;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    #21252b,
+    #1e2227,
+    #1b1f24,
+    #191c20,
+    #16191d
+  );
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  width: 325px;
+}
+.selected-rating {
+  background-color: hsl(213, 19%, 24%);
+  border-radius: 1rem;
+  color: hsl(25, 97%, 53%);
+  padding: 0.2rem 1rem;
+  width: fit-content;
+  margin: 1rem auto;
+  opacity: 0.7;
+}
+h2 {
+  opacity: 0.8;
+}
+
+@media (min-width: 425px) {
+  .rating-state,
+  .thank-you-state {
+    width: 400px;
+  }
+}
